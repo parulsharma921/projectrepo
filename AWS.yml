@@ -1,0 +1,8 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Resources:
+  MyEC2Instance:
+    Type: "AWS::EC2::Instance"
+    Properties:
+      InstanceType: "t2.micro"
+      ImageId: "ami-0f2967bce46537146"  # Replace with your desired AMI ID
+      KeyName: "demo"  # Replace with your key pair name without the .pem extension
